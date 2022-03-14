@@ -1,0 +1,2 @@
+# MagicDiscord
+Magic Discord Bot
