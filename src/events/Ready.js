@@ -3,7 +3,7 @@ const Query = require("minecraft-query")
 const query = new Query({host: "play.magicskyblock.tk",port: 25300})
 module.exports = {
     name: `ready`,
-    once: true,
+    once: false,
     execute(client){
         setInterval(() => {
             query.basicStat().then(query => {

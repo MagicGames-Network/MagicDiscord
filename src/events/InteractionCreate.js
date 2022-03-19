@@ -1,7 +1,7 @@
 const {MessageEmbed, MessageActionRow, MessageSelectMenu} = require("discord.js");
 module.exports = {
     name: "interactionCreate",
-    once: true,
+    once: false,
     execute(client,interaction){
         if (interaction.isCommand()) {
             const command = require(`../commands/${interaction.commandName}.js`)
