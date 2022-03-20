@@ -5,7 +5,6 @@ module.exports = {
     async post(commands) {
         try {
             console.log('[Discord API] Started refreshing application (/) commands.'.yellow);
-            console.log(commands)
             await rest.put(
                 Routes.applicationGuildCommands("952955285750825071", "952994889413591100"),
                 {body: commands},

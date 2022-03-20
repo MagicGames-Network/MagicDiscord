@@ -1,4 +1,5 @@
 const Query = require("minecraft-query")
+const {GuildID,ChannelID} = require("../../config.json")
 
 const query = new Query({host: "play.magicskyblock.tk",port: 25300})
 module.exports = {
@@ -16,6 +17,8 @@ module.exports = {
                     })
                 }
             )
-        },1000)
+            let guild = client.guilds.cache.get(GuildID)
+            let channel = guild.channels.cache.get(ChannelID).setName(`💫 ⏤͟͟͞ Members: ${guild.memberCount}`)
+        },10000)
     }
 }

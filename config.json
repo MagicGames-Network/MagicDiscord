@@ -2,5 +2,12 @@
   "VoiceLogChannelID": "954469615226982462",
   "MessageDeleteLogChannelID": "954651029843099690",
   "MessageUpdateLogChannelID": "954660277545214032",
-  "MessageDeleteBulkChannelID": "954669023440822342"
+  "MessageDeleteBulkChannelID": "954669023440822342",
+  "JoinEveryoneLogChannelID": "",
+  "JoinLogChannelID": "954806601590644766",
+  "RemoveLogChannelID": "954821132970786816",
+  "BanLogChannelID": "955016971538284624",
+  "UnBanLogChannelID": "955016971538284624",
+  "GuildID": "952994889413591100",
+  "ChannelID": "952994889413591104"
 }
