@@ -8,11 +8,25 @@ module.exports = {
                     permissionOverwrites: [
                         {
                             id: interaction.user.id,
-                            allow: [Permissions.FLAGS.SEND_MESSAGES]
-                        }
+                            allow: [`SEND_MESSAGES`,`VIEW_CHANNEL`]
+                        },
+                        {
+                            id: "956947374004109423",
+                            allow: [`SEND_MESSAGES`,`VIEW_CHANNEL`]
+                        },
+                        {
+                            id: interaction.guild.id,
+                            deny: [`VIEW_CHANNEL`]
+                        },
+
                     ]
                 }).then(channel => {
-                    channel.setParent("954362989245505566")
+                    channel.setParent("954362989245505566",{
+                        lockPermissions: false
+                    })
+                    channel.permissionOverwrites.edit(interaction.guild.roles.everyone,{
+                        VIEW_CHANNEL: false
+                    })
                     let embed = new MessageEmbed()
                         .setColor("#69e0a4")
                         .setAuthor({
@@ -66,7 +80,9 @@ module.exports = {
                         }
                     ]
                 }).then(channel => {
-                    channel.setParent("954362989245505566")
+                    channel.setParent("954362989245505566",{
+                        lockPermissions: false
+                    })
                     let embed = new MessageEmbed()
                         .setColor("#69e0a4")
                         .setAuthor({
@@ -120,7 +136,9 @@ module.exports = {
                         }
                     ]
                 }).then(channel => {
-                    channel.setParent("954362989245505566")
+                    channel.setParent("954362989245505566",{
+                        lockPermissions: false
+                    })
                     let embed = new MessageEmbed()
                         .setColor("#69e0a4")
                         .setAuthor({

@@ -1,10 +1,12 @@
 const {SlashCommandBuilder} = require("@discordjs/builders")
-const {MessageActionRow, MessageButton, MessageEmbed, MessageSelectMenu} = require("discord.js")
+const {TicketSetupPermissionRoleID} = require("../../config.json")
+const {MessageActionRow, MessageEmbed, MessageSelectMenu} = require("discord.js")
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("ticketsetup")
         .setDescription("Ticket Setup Command for Admins!"),
     async execute(interaction){
+        if (!interaction.member.roles.cache.has(TicketSetupPermissionRoleID)) return interaction.reply("You don't have permission to use this command.")
         let embed = new MessageEmbed()
             .setColor("#69e0a4")
             .addFields(
@@ -55,6 +57,6 @@ module.exports = {
 
             )
         interaction.reply("Ticket channel successfully established.")
-        interaction.client.guilds.cache.get("952994889413591100").channels.cache.get("952994889413591103").send({ephemeral: true, embeds: [embed], components: [row]})
+        interaction.guild.channels.cache.get("959539371973951579").send({ephemeral: true, embeds: [embed], components: [row]})
     }
 }

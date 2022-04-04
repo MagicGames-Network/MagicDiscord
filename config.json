@@ -3,11 +3,15 @@
   "MessageDeleteLogChannelID": "954651029843099690",
   "MessageUpdateLogChannelID": "954660277545214032",
   "MessageDeleteBulkChannelID": "954669023440822342",
-  "JoinEveryoneLogChannelID": "",
+  "JoinEveryoneLogChannelID": "954806601590644766",
   "JoinLogChannelID": "954806601590644766",
   "RemoveLogChannelID": "954821132970786816",
   "BanLogChannelID": "955016971538284624",
   "UnBanLogChannelID": "955016971538284624",
   "GuildID": "952994889413591100",
-  "ChannelID": "952994889413591104"
+  "ChannelID": "952994889413591104",
+  "PunishmentLogChannelID": "955079438142414858",
+  "PanelLink": "https://panel.magicgamesmc.net/api",
+  "APIKey": "T72G8czQG0OohMaQoh5ZrCmaJRZbHrLhxbDBnmpwmnWvxKzC",
+  "TicketSetupPermissionRoleID": "956947374004109423"
 }

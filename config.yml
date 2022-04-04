@@ -1,0 +1,39 @@
+token: 'BOT TOKEN'
+botstatus:
+  enable: false
+  text: 'Hosting Panel'
+  type: 'WATCHING'
+
+channel: '959539469927714826'
+refreshtime: 60
+
+panel:
+  url: 'panel.magicgamesmc.net'
+  adminkey: 'TsunwleOVbz0GsERuWAwqzxveaAX6HBTWCh8joxH6KWcElKK'
+
+embed:
+  title: 'Nodes Stats'
+  color: 'E5BE11'
+  description:
+    enable: false
+    text: 'EMBED DESCRIPTION'
+  footer:
+    enable: true
+    text: 'MagicGames'
+  timestamp: true
+
+status:
+  online: ':green_circle: Online'
+  offline: ':red_circle: Offline'
+  check: ':orange_circle: Checking'
+
+resource:
+  enable: true
+  servers: true
+  allocations: true
+  location: true
+  unit: 'gb'
+
+
+debug: false
+debugaxios: false

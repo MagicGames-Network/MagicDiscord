@@ -1,7 +1,7 @@
 // noinspection JSClosureCompilerSyntax
 process.setMaxListeners(0)
 const Discord = require("discord.js");
-const { Client, Intents} = require('discord.js');
+const { Client} = require('discord.js');
 const client = new Client({ intents: 98303});
 
 const { readdirSync } = require('fs');
@@ -13,13 +13,13 @@ require('discord-logs')(client);
 require('colors');
 
 
-process.on('unhandledRejection', (err) => {
+/**process.on('unhandledRejection', (err) => {
     console.error(`Unhandled Rejection: ${err}`);
 });
 
 process.on('uncaughtException', (err) => {
     console.error(`Uncaught Exception: ${err}`);
-});
+});*/
 
 const commands = []
 
